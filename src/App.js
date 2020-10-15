@@ -14,22 +14,24 @@ function App() {
     <Router>
       <div className="App">
         <div className="container">
-          <nav>
-            <h1>LOREM IPSUM</h1>
-            <ul>
-                <Link to="/">
-                <a>Home</a>
-                </Link>
-                <Link to="/about">
-                  <a>About</a>
-                </Link>
-              </ul>
-          </nav>
+          <div className="nav-container">
+            <nav>
+              <h1>LOREM IPSUM</h1>
+              <ul>
+                  <Link to="/">
+                  <a>Home</a>
+                  </Link>
+                  <Link to="/about">
+                    <a>About</a>
+                  </Link>
+                </ul>
+            </nav>
+          </div>
+          <Switch>
+            <Route path="/about" component={About} /> 
+            <Route path="/" component={Home} />
+          </Switch>
         </div>
-        <Switch>
-          <Route path="/about" component={About} /> 
-          <Route path="/" component={Home} />
-        </Switch>
       </div>
     </Router>
   );
