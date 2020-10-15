@@ -4,7 +4,7 @@ import './Home.scss';
 export default function Home() {
 
     return (
-        <div>
+        <div className="home-filler">
             <p>This is a test </p>
         </div>
     )

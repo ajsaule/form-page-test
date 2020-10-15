@@ -17,13 +17,13 @@ function App() {
           <nav>
             <h1>LOREM IPSUM</h1>
             <ul>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              <Link to="/about">
-                <li>About</li>
-              </Link>
-            </ul>
+                <Link to="/">
+                <a>Home</a>
+                </Link>
+                <Link to="/about">
+                  <a>About</a>
+                </Link>
+              </ul>
           </nav>
         </div>
         <Switch>
